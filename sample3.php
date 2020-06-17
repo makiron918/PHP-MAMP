@@ -15,7 +15,7 @@
     <pre>
       <?php
       $i = 1;
-      while($i <= 365) {
+      while($i < 366) {
         print($i . "\n");
         $i = $i + 1;
       }
