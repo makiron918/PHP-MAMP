@@ -14,7 +14,7 @@
     <h2>Practice</h2>
     <pre>
       <?php
-      print('PHPを勉強中です！');
+      print(100+1050+200);
       ?>
     </pre>
   </main>
