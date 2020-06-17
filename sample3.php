@@ -15,9 +15,10 @@
     <pre>
       <?php
       $i = 1;
-      print($i . "\n");
-      $i = $i + 1;
-      print($i . "\n");
+      while($i <= 365) {
+        print($i . "\n");
+        $i = $i + 1;
+      }
       ?>
     </pre>
   </main>
