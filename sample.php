@@ -13,9 +13,12 @@
   <main>
     <h2>Practice</h2>
     <pre>
-      <?php
+      合計金額は<?php
       print(100+1050+200);
-      ?>
+      ?>円です
+      税込価格は<?php
+      print((100+1050+200)*1.08);
+      ?>円です
     </pre>
   </main>
 </body>
