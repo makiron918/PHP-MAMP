@@ -14,6 +14,7 @@
     <h2>Practice</h2>
     <pre>
       <?php
+      print(date('n/j(D)'));
       ?>
     </pre>
   </main>
