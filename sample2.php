@@ -14,7 +14,7 @@
     <h2>Practice</h2>
     <pre>
       <?php
-      print('1+1');
+      print(date('s'));
       ?>
     </pre>
   </main>
