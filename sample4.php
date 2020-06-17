@@ -14,7 +14,7 @@
     <h2>Practice</h2>
     <pre>
       <?php
-      print(date('n/j(D)', time() + 60 * 60 * 24));
+      print(date('n/j(D)', strtotime('+2day')));
       ?>
     </pre>
   </main>
