@@ -13,11 +13,14 @@
   <main>
     <h2>Practice</h2>
     <pre>
+      <?php
+      $sum = 100+1050+200;
+      ?>
       合計金額は<?php
-      print(100+1050+200);
+      print($sum);
       ?>円です
       税込価格は<?php
-      print((100+1050+200)*1.08);
+      print($sum*1.08);
       ?>円です
     </pre>
   </main>
