@@ -14,10 +14,13 @@
     <h2>Practice</h2>
     <pre>
       <?php
-      $i = 1;
-      while($i < 366) {
+      // $i = 1;
+      // while($i < 366) {
+      //   print($i . "\n");
+      //   $i ++;
+      // }
+      for ($i = 1; $i <= 365; $i++) {
         print($i . "\n");
-        $i ++;
       }
       ?>
     </pre>
