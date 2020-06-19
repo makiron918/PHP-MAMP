@@ -14,7 +14,11 @@
     <h2>Practice</h2>
     <pre>
       <?php
-      print(date('n/j(D)', strtotime('+2day')));
+      for ($i = 1; $i <= 365; $i++) {
+        $date = strtotime('+' . $i . 'day');
+        print(date('n/j(D)', $date));
+        print "\n";
+      }
       ?>
     </pre>
   </main>
