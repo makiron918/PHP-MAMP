@@ -16,6 +16,8 @@
       <?php
       $week_name = ['日', '月', '火', '水', '木', '金', '土'];
       print($week_name[date('w')]);
+      $date =sprintf('%04d年 %02d月 %02d日', 2018, 1, 5);
+      print($date);
       ?>
     </pre>
   </main>
