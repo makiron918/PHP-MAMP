@@ -12,11 +12,12 @@
   </header>
   <main>
     <h2>Practice</h2>
-    <form action="submit.php" method="get">
-      <label form="my_name">お名前：
-      </label>
-      <input type="text" id="my_name" name="my_name" maxlength="255" value="">
-      <input type="submit" value="送信する">
+    <form action="submit.php" method="post">
+      <p>性別：
+        <input type="radio" name="gender" value="male">男性
+        /
+        <input type="radio" name="gender" value="female">女性
+      </p>
     </form>
   </main>
 </body>
