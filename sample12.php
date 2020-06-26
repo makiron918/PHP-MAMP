@@ -14,7 +14,12 @@
     <h2>Practice</h2>
     <pre>
     <?php
-    
+    $age = 20;
+    if (is_numeric($age)) {
+      print($age . '歳');
+    } else {
+      print('※ 年齢が数字ではありません');
+    }
     ?>
     </pre>
   </main>
