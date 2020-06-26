@@ -14,7 +14,7 @@
     <h2>Practice</h2>
     <pre>
     <?php
-    $zip = '987-6543';
+    $zip = '９８７-６５４７';
 
     $zip = mb_convert_kana($zip, 'a', 'UTF-8');
     if (preg_match("/\A\d{3}[-]\d{4}\z/", $zip)) {
