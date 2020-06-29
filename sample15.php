@@ -12,14 +12,11 @@
   </header>
   <main>
     <h2>Practice</h2>
-    <pre>
-      <?php
-      $week = array('金', '土', '日', '月', '火', '水', '木');
-      for ($i=1; $i<31; $i++){
-        print($week[$i%7] . "\n");
-      }
-      ?>
-    </pre>
+    <table>
+      <tr>
+        <td>1行目</td>
+      </tr>
+    </table>
   </main>
 </body>
 </html>
