@@ -13,6 +13,7 @@
   <main>
     <h2>Practice</h2>
     <pre>
+      変数の値：<?php print($value); ?>
       <?php print($_COOKIE['save_message']); ?>
     </pre>
   </main>
