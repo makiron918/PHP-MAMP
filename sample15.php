@@ -21,6 +21,7 @@
           print('<tr>');
         }
         print('<td>' . $i . '行目</td>');
+        print('</tr>');
       }
       <tr>
         <td>1行目</td>
