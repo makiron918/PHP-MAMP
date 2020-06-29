@@ -15,19 +15,9 @@ setcookie('save_message', 'Cookieに保存した値です', time() + 60 * 60 * 2
   </header>
   <main>
     <h2>Practice</h2>
-    <table>
-      <?php
-      for ($i=1; $i<=100; $i++){
-        if ($i % 2) {
-          print('<tr style="background-color: #ccc">');
-        } else {
-          print('<tr>');
-        }
-        print('<td>' . $i . '行目</td>');
-        print('</tr>');
-      }
-      ?>
-    </table>
+    <pre>
+      <a href="page02.php">Page02</a>
+    </pre>
   </main>
 </body>
 </html>
