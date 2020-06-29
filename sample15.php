@@ -15,7 +15,7 @@
     <pre>
       <?php
       $week = array('金', '土', '日', '月', '火', '水', '木');
-      print(week[0]);
+      print($week[0]);
       ?>
     </pre>
   </main>
