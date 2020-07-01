@@ -20,8 +20,10 @@
         echo 'DB接続エラー: ' . $e->getMessage();
       }
 
-      $count = $db->exec('INSERT INTO my_items SET maker_id=1, item_name="もも", price=210');
-      echo $count . '件のデータを挿入しました';
+      $records = $db->query('SELECT * FROM my_items');
+      while ($record = $records->fetch()) {
+        print($record['item_name'] . "\n");
+      }
       ?>
     </pre>
   </main>
