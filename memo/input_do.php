@@ -14,7 +14,11 @@
     <h2>Practice</h2>
     <pre>
       <?php
-      $db = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', 'root');
+      try {
+        $db = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', 'root');
+      } catch(PDOException $e) {
+        echo 'DB接続エラー： ' . $e->getMessage();
+      }
       ?>
     </pre>
   </main>
