@@ -21,8 +21,8 @@
       }
 
       $id = $_REQUEST['id'];
-      if (!is_numeric($id)) {
-        print('数字で指定してください');
+      if (!is_numeric($id) || $id <= 0) {
+        print('1以上の数字で指定してください');
         exit();
       }
 
