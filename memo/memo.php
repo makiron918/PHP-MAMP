@@ -20,6 +20,13 @@
         echo 'DB接続エラー: ' . $e->getMessage();
       }
 
+      $memos = $db->query('SELECT * FROM memos WHERE id=1');
+      $memo = $memos->fetch();
+      ?>
+      <article>
+        <pre><?php print($memo['memo']); ?></pre>
+        <a href="index.php">戻る</a>
+      </article>
     </pre>
   </main>
 </body>
