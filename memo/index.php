@@ -17,7 +17,12 @@
       
       require('dbconnect.php');
 
-      $page = $_REQUEST['page'];
+      if (isset($_REQUEST['page'])) {
+        $page = $_REQUEST['page'];
+      } else {
+        $page = 1;
+      }
+      
       $start = 5 * ($page - 1);
 
       $memos = $db->prepare('SELECT * FROM memos ORDER BY id DESC LIMIT ?, 5');
