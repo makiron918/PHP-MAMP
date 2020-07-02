@@ -18,7 +18,7 @@
       if (isset($_REQUEST['id']) && is_numeric($_REQUEST['id'])) {
         $id = $_REQUEST['id'];
 
-        $statement = $db->prepare('DELETE FROM memos SET memo=? WHERE id=?');
+        $statement = $db->prepare('DELETE FROM memos WHERE id=?');
         $statement->execute(array($id));
       }
       
