@@ -37,6 +37,8 @@
         <hr>
         <?php endwhile; ?>
 
+        <a href="index.php?page=<?php print($page-1); ?>"><?php print($page-1); ?>ページ目へ</a>
+        |
         <a href="index.php?page=<?php print($page+1); ?>"><?php print($page+1); ?>ページ目へ</a>
       </article>
     </pre>
