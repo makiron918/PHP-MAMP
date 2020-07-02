@@ -15,7 +15,7 @@
     <pre>
       <?php
       require('dbconnect.php');
-      
+
       $id = $_REQUEST['id'];
       if (!is_numeric($id) || $id <= 0) {
         print('1以上の数字で指定してください');
@@ -28,6 +28,7 @@
       ?>
       <article>
         <pre><?php print($memo['memo']); ?></pre>
+        <a href="update.php?id=<?php print($memo['id']); ?>">編集する</a>
         <a href="index.php">戻る</a>
       </article>
     </pre>
