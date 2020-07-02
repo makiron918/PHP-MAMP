@@ -19,6 +19,7 @@
       $statement->execute(array($_POST['memo'], $_POST['id']));
       ?>
     </pre>
+    <p>メモの内容を変更しました</p>
     <p><a href="index.php">戻る</a></p>
   </main>
 </body>
