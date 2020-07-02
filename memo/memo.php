@@ -14,12 +14,8 @@
     <h2>Practice</h2>
     <pre>
       <?php
-      try {
-        $db = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', 'root');
-      } catch(PDOException $e) {
-        echo 'DB接続エラー: ' . $e->getMessage();
-      }
-
+      require('dbconnect.php');
+      
       $id = $_REQUEST['id'];
       if (!is_numeric($id) || $id <= 0) {
         print('1以上の数字で指定してください');
