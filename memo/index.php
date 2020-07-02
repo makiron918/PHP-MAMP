@@ -16,7 +16,9 @@
       <?php
       
       require('dbconnect.php');
-      $memos = $db->query('SELECT * FROM memos ORDER BY id DESC LIMIT 0, 5');
+      $memos = $db->prepare('SELECT * FROM memos ORDER BY id DESC LIMIT ?, 5');
+      $memos->bindParam(1, $_REQUEST['page'], PDO::PARAM_INT);
+      $memos->execute();
       ?>
 
       <article>
