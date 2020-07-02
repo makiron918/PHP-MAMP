@@ -17,7 +17,7 @@
       
       require('dbconnect.php');
 
-      if (isset($_REQUEST['page'])) {
+      if (isset($_REQUEST['page']) && is_numeric($_REQUEST['page'])) {
         $page = $_REQUEST['page'];
       } else {
         $page = 1;
