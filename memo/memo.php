@@ -20,16 +20,6 @@
         echo 'DB接続エラー: ' . $e->getMessage();
       }
 
-      $memos = $db->query('SELECT * FROM memos ORDER BY id DESC');
-      ?>
-
-      <article>
-        <?php while($memo = $memos->fetch()): ?>
-        <p><a href="#"><?php print(mb_substr($memo['memo'], 0, 50)); ?></a></p>
-        <time><?php print($memo['created_at']); ?></time>
-        <hr>
-        <?php endwhile; ?>
-      </article>
     </pre>
   </main>
 </body>
