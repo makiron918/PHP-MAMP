@@ -16,6 +16,7 @@
       <?php
       try {
         $db = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', 'root');
+        $db->exec('INSERT INTO memos SET memo="' . $_POST['memo'] . '", created_at=NOW()');
       } catch(PDOException $e) {
         echo 'DB接続エラー： ' . $e->getMessage();
       }
