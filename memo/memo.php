@@ -20,6 +20,12 @@
         echo 'DB接続エラー: ' . $e->getMessage();
       }
 
+      $id = $_REQUEST['id'];
+      if (!is_numeric($id)) {
+        print('数字で指定してください');
+        exit();
+      }
+
       $memos = $db->prepare('SELECT * FROM memos WHERE id=?');
       $memos->execute(array($_REQUEST['id']));
       $memo = $memos->fetch();
