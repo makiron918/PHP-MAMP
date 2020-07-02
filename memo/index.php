@@ -20,11 +20,16 @@
         echo 'DB接続エラー: ' . $e->getMessage();
       }
 
-      $records = $db->query('SELECT * FROM my_items');
-      while ($record = $records->fetch()) {
-        print($record['item_name'] . "\n");
-      }
+      $memos = $db->query('SELECT * FROM memos ORDER BY id DESC');
       ?>
+
+      <article>
+        <?php while($memo = $memos->fetch()): ?>
+        <p><a href="#"><?php print($memo['memo']); ?></a></p>
+        <time><?php print($memo['created_at']); ?></time>
+        <hr>
+        <?php endwhile; ?>
+      </article>
     </pre>
   </main>
 </body>
